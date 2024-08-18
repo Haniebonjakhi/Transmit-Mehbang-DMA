@@ -59,13 +59,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-	
-//  uint8_t message[] = "Mehbang";
-//  uint8_t = sizeof(message);
-//  HAL_UART_Transmit_DMA(&huart2, , sizeof(message));
-	
-	HAL_UART_Transmit_DMA(&huart2, (uint8_t *)"Mehbang", 7); 
-	
+	HAL_UART_Transmit_DMA(&huart2, (uint8_t *)"Mehbang", 7);
 }
 /* USER CODE END 0 */
 
